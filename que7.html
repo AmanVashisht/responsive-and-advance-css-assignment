@@ -1,0 +1,54 @@
+<!-- In this coding challenge, we will explore CSS button animations commonl- used in product landing pages to 
+attract users' attention and encourage product registration. A good example can be found at https://
+codercommunity.io/ . Let's create a similar animated button in t#is assignment to capture the user's 
+attention on our landing page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid #000;
+            padding: 100px 200px;
+            margin: 40px;
+            width: 250px;
+        }
+        button{
+            background-image: linear-gradient(to right, #2888d1, #3737d3);
+            border-radius: 10px;
+            padding: 20px 40px;
+            border: none;
+            animation: bounce 1.5s ease-in-out infinite alternate;
+        }
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
+        @keyframes bounce{
+            0%,
+            30%{
+                transform: translateY(10px);
+                transition-duration: 0.6ms;
+            }
+            60%{
+                transform: translateY(20px);
+                transition-duration: 0.6ms;
+            }
+            60%{
+                transform: translateY(30px);
+                transition-duration: 0.6ms;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <button>
+            <a href="https://pwskills.com">Click Me To Visit PW Skills.</a>
+        </button>
+    </div>
+</body>
+</html>

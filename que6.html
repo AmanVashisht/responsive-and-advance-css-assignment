@@ -1,0 +1,40 @@
+<!-- The grayscale look is important as it can evoke a sense of nostalgia or create a timeless aesthetic in web 
+design. In this coding challenge let’s try to implement the gra-scale filter. The task is to apply a grayscale 
+filter to a colorful image on hover. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image{
+            border: 2px solid #000;
+            margin: 30px;
+            padding: 20px;
+            width: 485px;
+        }
+        h1{
+            text-decoration: underline;
+            font-weight: bold;
+            margin-top: -20px;
+        }
+        img{
+            width: 480px;
+            height: 350px;
+            transition: 0.5s;
+            border-radius: 10px;    
+        }
+        img:hover{
+            filter: grayscale(0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <h1>Hover To Have A GreyScale Look.</h1>
+        <img src="Bill-Gates.jpg" alt="image">
+    </div>
+</body>
+</html>

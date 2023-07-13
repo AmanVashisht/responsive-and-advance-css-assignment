@@ -1,0 +1,63 @@
+<!-- Transforming an element by an angle using CSS transform is important as it allows for the creation of visually dynamic and engaging web designs by rotating elements. In this coding challenge let's create a sticky note and on hovering the sticky note, it should transform by rotating 90 degree' anti-clockwise. These types of transformations are usually implemented on the landing pages. Below are the images for reference. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 80px;
+        }
+        .card{
+            background-image: linear-gradient(to right, #1ea4ec, #1818e4);
+            padding: 30px;
+            width: 20vw;
+            border: 2px solid #000;
+            border-radius: 10px;
+        }
+        .card:hover{
+            transform: rotate(-45deg);
+        }
+        .top{
+            display: flex;
+            justify-content: space-between;
+        }
+        .no{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .date{
+            color: #fff;
+        }
+        button{
+            background-color: #7fffd4;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            padding: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="top">
+            <div class="no">#01</div>
+            <div class="date">Created On: 01/01/2023</div>
+        </div>
+        <div class="head"><h1>Important dates</h1></div>
+        <div class="list">
+            <ul>
+                <li>January 26 - Republic Day</li>
+                <li>August 15 - Independence Day</li>
+                <li>October 2 - Gandhi Jayanti</li>
+                <li>August 29 - National Sports Day</li>
+            </ul>
+            <button>Mark As Done</button>
+        </div>
+    </div>
+</body>
+</html>
